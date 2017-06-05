@@ -1,0 +1,57 @@
+{
+  "name": "persist-handlebars-loader",
+  "version": "1.0.2",
+  "description": "Encode/Transcode videos with webpack",
+  "author": {
+    "name": "Rafael Milewski",
+    "email": "rafael.milewski@gmail.com",
+    "url": "https://github.com/milewski"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/milewski/handbrake-loader",
+  "bugs": {
+    "url": "https://github.com/milewski/handbrake-loader/issues"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "subtitle",
+    "burn-subtitle",
+    "handbrake",
+    "encode",
+    "transcode",
+    "video",
+    "mp4",
+    "m4v",
+    "h.264",
+    "h.265",
+    "vp8",
+    "vp9",
+    "mp3"
+  ],
+  "main": "source/loader.js",
+  "files": [
+    "source/*.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milewski/handbrake-loader.git"
+  },
+  "scripts": {
+    "prepublish": "npm test",
+    "build": "tsc",
+    "pretest": "npm run build"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.15",
+    "expect.js": "^0.3.1",
+    "file-loader": "^0.11.1",
+    "mocha": "^3.2.0",
+    "typescript": "^2.3.2",
+    "webpack": "^2.4.1"
+  }
+}
